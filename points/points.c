@@ -67,4 +67,6 @@ int main(int argc, char *argv[])
 
     double a = area(points, count);
     printf("Area: %.3lf\n", a);
+
+    free(points);
 }
