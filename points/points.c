@@ -50,7 +50,7 @@ double area(const point *points, size_t count)
         a += (points[(i + 1) % count].x + points[i].x) * (points[(i + 1) % count].y - points[i].y);
     }
 
-    return a / 2;
+    return fabs(a / 2);
 }
 
 int main(int argc, char *argv[])
